@@ -1,17 +1,17 @@
-/* body {
+body {
   background-color: burlywood;
 }
 
 header {
   background-color: blueviolet;
-} */
+}
 
 main {
   flex-grow: 1;
 }
-/* footer {
+footer {
   background-color: blueviolet;
-} */
+}
 
 h1 {
   color: blue;

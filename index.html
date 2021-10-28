@@ -12,7 +12,6 @@
 </head>
 
 <!-- Code for debugging containers, rows, cols -->
-<!-- this is not working - there must be something in codeworks templates that makes this work -->
 <style>
   body.debug .container,
   body.debug .container-fluid {
@@ -32,7 +31,7 @@
 </style>
 
 
-<body>
+<body class="debug vh-100">
   <header class="container-fluid bg-dark">
     <div class="row">
       <div class="col-7">
@@ -43,7 +42,7 @@
       </div>
     </div>
   </header>
-  <main class="container">
+  <main class="container d-flex">
     <div class="row">
       <div class="col">
         <p>the main stuff</p>
