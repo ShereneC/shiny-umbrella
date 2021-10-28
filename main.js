@@ -1,2 +1,2 @@
 let count = 0
-document.getElementById('count').innerHTML = count
+// document.getElementById('count').innerHTML = count
