@@ -37,8 +37,10 @@ button {
 
   &::after { content: attr(data-ico) } 
 
+  @supports (-webkit-mask-clip: text) {
+    -webkit-text-fill-color: transparent;
     --full: linear-gradient(red 0 0);
-  -webkit-mask: var(--full) padding-box, var(--full);
-  -webkit-mask-composite: xor;
-  mask: var(--full) padding-box exclude, var(--full);
+    -webkit-mask: var(--full) text, var(--full) padding-box, var(--full);
+    -webkit-mask-composite: xor;
+  }
 }

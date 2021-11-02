@@ -30,13 +30,17 @@ button {
   background: linear-gradient(to right bottom, var(--slist)) border-box;
   font: 700 1.5em/1.25 ubuntu, sans-serif;
   text-transform: uppercase;
-  --full: linear-gradient(red 0 0);
-  -webkit-mask: var(--full) padding-box, var(--full);
-  -webkit-mask-composite: xor;
-  mask: var(--full) padding-box exclude, var(--full);
 }
 button::after {
   content: attr(data-ico);
+}
+@supports (-webkit-mask-clip: text) {
+  button {
+    -webkit-text-fill-color: transparent;
+    --full: linear-gradient(red 0 0);
+    -webkit-mask: var(--full) text, var(--full) padding-box, var(--full);
+    -webkit-mask-composite: xor;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
