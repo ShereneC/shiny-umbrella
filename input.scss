@@ -24,6 +24,7 @@ h1 {
 
 button {
   display: grid;
+  max-height: 4rem;
   grid-auto-flow: column;
   grid-gap: .5em;
   border: solid .25em transparent;
