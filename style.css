@@ -1,5 +1,7 @@
 body {
   background-color: burlywood;
+  font: 100% Helvetica, sans-serif;
+  color: #333;
 }
 
 header {
