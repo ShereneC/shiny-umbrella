@@ -31,8 +31,8 @@
 </style>
 
 
-<body class="debug vh-100">
-  <header class="container-fluid bg-dark">
+<body class="debug container-fluid bg-dark vh-100 d-flex flex-column">
+  <header class="row">
     <div class="row">
       <div class="col-7">
         <h1>stuff</h1>
@@ -42,15 +42,13 @@
       </div>
     </div>
   </header>
-  <main class="container d-flex">
-    <div class="row">
-      <div class="col">
-        <p>the main stuff</p>
-        <button data-ico="👻" style="--slist: #ffda5f, #f9376b">boo!</button>
-      </div>
+  <main class="row">
+    <div class="col d-flex">
+      <p>the main stuff</p>
+      <button data-ico="👻" style="--slist: #ffda5f, #f9376b">boo!</button>
     </div>
   </main>
-  <footer class="container-fluid">
+  <footer class="row">
     <div class="row">
       <div class="col">
         <h1>more stuff</h1>
