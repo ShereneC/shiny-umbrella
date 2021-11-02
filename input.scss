@@ -9,7 +9,6 @@ header {
 main {
   flex-grow: 1;
 }
-
 footer {
   background-color: blueviolet;
 }
@@ -21,16 +20,15 @@ h1 {
 button {
   display: grid;
   grid-auto-flow: column;
-  grid-gap: 0.5em;
-  border: solid 0.25em transparent;
+  grid-gap: .5em;
+  border: solid .25em transparent;
   padding: 1em 1.5em;
   border-radius: 9em;
-  background: linear-gradient(to right bottom, var(--slist)) border-box;
-  font: 700 1.5em/1.25 ubuntu, sans-serif;
+  background:
+    linear-gradient(to right bottom, var(--slist))
+    border-box;
+  font: 700 1.5em/ 1.25 ubuntu, sans-serif;
   text-transform: uppercase;
-}
-button::after {
-  content: attr(data-ico);
-}
 
-/*# sourceMappingURL=style.css.map */
+  &::after { content: attr(data-ico) } 
+}
