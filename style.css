@@ -44,4 +44,8 @@ button::after {
   }
 }
 
+div.col {
+  overflow-x: auto;
+}
+
 /*# sourceMappingURL=style.css.map */
