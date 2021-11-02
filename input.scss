@@ -2,7 +2,7 @@ $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 
 body {
-  background-color: burlywood;
+  background-color: $primary-color;
   font: 100% $font-stack;
   color: $primary-color;
 }
@@ -36,4 +36,9 @@ button {
   text-transform: uppercase;
 
   &::after { content: attr(data-ico) } 
+
+    --full: linear-gradient(red 0 0);
+  -webkit-mask: var(--full) padding-box, var(--full);
+  -webkit-mask-composite: xor;
+  mask: var(--full) padding-box exclude, var(--full);
 }
