@@ -16,3 +16,19 @@ footer {
 h1 {
   color: blue;
 }
+
+button {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: .5em;
+  border: solid .25em transparent;
+  padding: 1em 1.5em;
+  border-radius: 9em;
+  background:
+    linear-gradient(to right bottom, var(--slist))
+    border-box;
+  font: 700 1.5em/ 1.25 ubuntu, sans-serif;
+  text-transform: uppercase;
+
+}
+  /* &::after { content: attr(data-ico) } */
